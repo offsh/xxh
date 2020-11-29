@@ -5,16 +5,16 @@ with open("README.md", "r", encoding="utf8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="xxh-xxh",
+    name="offsh-xxh",
     version=__version__,
-    description="Bring your favorite shell wherever you go through the ssh",
+    description="Bring your favorite shell wherever you go through the ssh. This is a fork from https://github.com/xxh/xxh with some extra featured designed for https://github.com/offsh/offshell",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/xxh/xxh",
+    url="https://github.com/offsh/xxh",
     project_urls={
-        "Documentation": "https://github.com/xxh/xxh/blob/master/README.md",
-        "Code": "https://github.com/xxh/xxh",
-        "Issue tracker": "https://github.com/xxh/xxh/issues",
+        "Documentation": "https://github.com/offsh/xxh/blob/master/README.md",
+        "Code": "https://github.com/offsh/xxh",
+        "Issue tracker": "https://github.com/offsh/xxh/issues",
     },
     python_requires='>=3.6',
     install_requires=[
@@ -35,6 +35,6 @@ setuptools.setup(
         "License :: OSI Approved :: BSD License"
     ],
     license="BSD",
-    author="xxh",
-    author_email="author@example.com"
+    author="offsh",
+    author_email="navarromoralesdev@gmail.com"
 )
