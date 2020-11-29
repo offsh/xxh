@@ -1059,6 +1059,11 @@ class xxh:
 
             self.eprint(f'First run {self.shell} on {host}')
 
+        # Run pre_connect plugins
+        for local_plugin_dir in list(local_plugins_dir.glob(f'xxh-plugin-local-*')):
+            for local_plugin_name in list(local_plugin_dir.glob(f'pre_connect-*.py')):
+                exec(open(local_plugin_name).read())
+
         # Connect to host
 
         host_execute_file = host_execute_command = []
@@ -1122,3 +1127,7 @@ class xxh:
                     ssh_pipe_command=ssh_pipe_command
                 ))
 
+        # Run post_connect plugins
+        for local_plugin_dir in list(local_plugins_dir.glob(f'xxh-plugin-local-*')):
+            for local_plugin_name in list(local_plugin_dir.glob(f'post_connect-*.py')):
+                exec(open(local_plugin_name).read())
