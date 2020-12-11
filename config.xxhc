@@ -35,5 +35,4 @@ hosts:
     +I:                         # install xxh packages (if not installed)
       - xxh-plugin-prerun-core
       - xxh-plugin-prerun-xxh
-      - xxh-plugin-prerun-dotfiles+git+https://github.com/offsh/xxh-plugin-prerun-dotfiles
       - xxh-plugin-prerun-xxh
