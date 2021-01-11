@@ -7,4 +7,4 @@ hosts:
       - xxh-plugin-prerun-dotfiles+git+https://github.com/offsh/xxh-plugin-prerun-dotfiles
       - xxh-plugin-local-syslog-profiler+git+https://github.com/offsh/xxh-plugin-local-syslog-profiler
       - xxh-plugin-prerun-xxh
-
+      - xxh-shell-xonsh+git+https://github.com/offsh/xxh-shell-xonsh
